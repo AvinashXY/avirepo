@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8">
+<title>JavaScript Form Validation using a sample registration form</title>
+<script src="jsregval.js"></script>
+<link rel="stylesheet" href="jsformval.css" type="text/css"/>
+</head>
+<body onload="document.registration.userid.focus();">
+<h1>Register to Daily Mess</h1>
+<form name='registration' onSubmit="return formValidation();">
+<ul>
+ <li><label for="title">Title</label></li>   
+ <li><input type="text" name="title"></li>
+ <li><label for="username">Name</label></li>
+<li><input type="text" name="username" size="30" /></li>
+<li><label for="company">Company:</label></li>
+<li> <input type="text" name="company" size="50"/></li>
+
+<li><label for="position">Position:</label>></li>
+<li> <input type="text" name="position"/></li>
+<li><label for="email">Email:</label></li>
+<li><input type="text" name="email" size="50" /></li>
+<li><label for="stadd">Street Address:</label></li>
+<li><input type="text" name="stadd"/></li>
+<li><label for="stadd2">Street Address2:</label></li>
+<li><input type="text" name="stadd2"/></li>
+<li><label for="country">Country:</label></li>
+<li><select name="country">
+<option selected="" value="India">(Please select a country)</option>
+<option value="AF">Australia</option>
+<option value="AL">Canada</option>
+<option value="DZ">India</option>
+<option value="AS">Russia</option>
+<option value="AD">USA</option>
+</select></li>
+
+<li><label for="city">City:</label></li>
+<li> <input type="text" name="city"/></li>
+<li><label for="state">State/Region:"</label></li>
+<li> <input type="text" name="state"/></li>
+
+<li><label for="zip">ZIP Code:</label></li>
+<li><input type="text" name="zip" /></li>
+<li><label for="phone">Phone.NO:</label></li>
+<li><input type="text" name="phone" /></li>
+<li><input type="submit" name="submit" value="Submit" /></li>
+</ul>
+</form>
+</body>
+</html>
